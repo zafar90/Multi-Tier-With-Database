@@ -1,0 +1,19 @@
+--
+- hosts: servers
+  become_user: ubuntu
+
+  tasks:
+
+    - name: kubectl commands
+      ansible.builtin.copy:
+        src: dep.yml
+        dest: /home/ubuntu/dep.yml
+        owner: ubuntu
+        group: ubuntu
+        mode: 0666
+
+    - name: apply manifest
+      ansible.builtin.shell: |
+        kubectl apply -f /home/ubuntu/dep.yml
+      args:
+        executable: /bin/bash
