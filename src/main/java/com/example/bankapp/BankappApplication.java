@@ -8,9 +8,12 @@ public class BankappApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BankappApplication.class, args);
+		
+		String nullString = null; // This will throw a NullPointerException
+                System.out.println(nullString.length());
 
-		String nullString = null;
-                System.out.println(nullString.length());  // This will throw a NullPointerException
+		String password = "1234";
+                System.out.println("Password" + password);
 	}
 
 }
