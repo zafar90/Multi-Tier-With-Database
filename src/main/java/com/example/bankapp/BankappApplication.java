@@ -8,6 +8,9 @@ public class BankappApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BankappApplication.class, args);
+
+		String nullString = null;
+                System.out.println(nullString.length());  // This will throw a NullPointerException
 	}
 
 }
