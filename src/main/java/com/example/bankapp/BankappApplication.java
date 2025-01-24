@@ -13,6 +13,9 @@ public class BankappApplication {
                 System.out.println(nullString.length());
 
 		String password = "1234";
+		String newpassword = "abcd";
+		String Onemorenewpassword = "cdafdag";
+		System.out.println("newpassword" + newpassword);
                 System.out.println("Password" + password);
 	}
 
