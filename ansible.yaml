@@ -16,4 +16,4 @@
     ansible.builtin.shell: |
       kubectl apply -f /home/ubuntu/ds.yml
       args:
-        executable: /bin/bash
+        executable: /bin/sh
