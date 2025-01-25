@@ -12,8 +12,8 @@
       group: ubuntu
       mode: 0666
 
-  - name: apply manifest
-    ansible.builtin.shell: |
-      kubectl apply -f /home/ubuntu/ds.yml
-      args:
-        executable: /bin/sh
+  - name: Apply Kubernetes manifest with PATH
+    ansible.builtin.command:
+     cmd: kubectl apply -f /home/ubuntu/ds.yml
+    environment:
+      PATH: /usr/local/bin:/usr/bin:/bin
