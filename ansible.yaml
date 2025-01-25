@@ -6,8 +6,8 @@
 
     - name: kubectl commands
       ansible.builtin.copy:
-        src: dep.yml
-        dest: /home/ubuntu/dep.yml
+        src: ds.yml
+        dest: /home/ubuntu/ds.yml
         owner: ubuntu
         group: ubuntu
         mode: 0666
