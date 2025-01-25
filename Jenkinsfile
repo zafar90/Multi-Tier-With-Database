@@ -46,7 +46,7 @@ pipeline {
             steps {
                 // Log in to DockerHub and push the image
                 sh "docker login -u intdoc89 -p ${dockerhubpwd}"
-                sh "docker push intodoc89/${appimage}:latest"
+                sh "docker push intdoc89/${appimage}:latest"
             }
         }
 
