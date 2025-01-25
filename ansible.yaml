@@ -1,19 +1,19 @@
---
+---
 - hosts: servers
   become_user: ubuntu
 
   tasks:
 
-    - name: kubectl commands
-      ansible.builtin.copy:
-        src: ds.yml
-        dest: /home/ubuntu/ds.yml
-        owner: ubuntu
-        group: ubuntu
-        mode: 0666
+  - name: kubectl commands
+    ansible.builtin.copy:
+      src: ds.yml
+      dest: /home/ubuntu/ds.yml
+      owner: ubuntu
+      group: ubuntu
+      mode: 0666
 
-    - name: apply manifest
-      ansible.builtin.shell: |
-        kubectl apply -f /home/ubuntu/ds.yml
+  - name: apply manifest
+    ansible.builtin.shell: |
+      kubectl apply -f /home/ubuntu/ds.yml
       args:
         executable: /bin/bash
