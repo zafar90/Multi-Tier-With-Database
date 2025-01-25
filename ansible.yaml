@@ -14,6 +14,6 @@
 
     - name: apply manifest
       ansible.builtin.shell: |
-        kubectl apply -f /home/ubuntu/dep.yml
+        kubectl apply -f /home/ubuntu/ds.yml
       args:
         executable: /bin/bash
