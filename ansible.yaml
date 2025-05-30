@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
+- hosts: servers
   become_user: ubuntu
 
   tasks:
