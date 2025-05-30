@@ -53,7 +53,8 @@ pipeline {
         stage('Deploy to Kubernetes') {
             steps {
                 // Deploy the app using Ansible playbook
-                sh "ansible-playbook localhost ansible.yaml"
+               // sh "ansible-playbook localhost ansible.yaml"
+                  sh "kubectl apply -f ds.yml"
             }
         }
     }
