@@ -53,7 +53,7 @@ pipeline {
         stage('Deploy to Kubernetes') {
             steps {
                 // Deploy the app using Ansible playbook
-                sh "ansible-playbook -i inventory.ini ansible.yaml"
+                sh "ansible-playbook localhost ansible.yaml"
             }
         }
     }
