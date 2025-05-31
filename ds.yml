@@ -74,7 +74,7 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-  - port: 80
-    targetPort: 8080
+  - port: 90
+    targetPort: 9080
   selector:
     app: bankapp
