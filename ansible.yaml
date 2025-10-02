@@ -4,16 +4,8 @@
 
   tasks:
 
-  - name: kubectl commands
-    ansible.builtin.copy:
-      src: ./ds.yml
-      dest: /home/ubuntu/ds.yml
-      owner: ubuntu
-      group: ubuntu
-      mode: 0666
-
   - name: Apply Kubernetes manifest with PATH
     ansible.builtin.command:
-     cmd: kubectl apply -f /home/ubuntu/ds.yml
+     cmd: kubectl apply -f ds.yml
     environment:
       PATH: /usr/local/bin:/usr/bin:/bin
