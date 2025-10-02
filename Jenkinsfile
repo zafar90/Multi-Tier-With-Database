@@ -45,7 +45,7 @@ pipeline {
         stage('Docker Login and Push') {
             steps {
                 // Log in to DockerHub and push the image
-                sh "docker login -u intodoc89 -p ${dockerhubpwd}"
+                sh "docker login -u intdoc89 -p ${dockerhubpwd}"
                 sh "docker push ${appimage}"
             }
         }
