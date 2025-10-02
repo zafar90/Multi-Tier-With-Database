@@ -72,7 +72,7 @@ kind: Service
 metadata:
   name: bankapp-service
 spec:
-  type: LoadBalancer
+  type: NodePort
   ports:
   - port: 90
     targetPort: 9080
