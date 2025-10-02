@@ -75,6 +75,6 @@ spec:
   type: NodePort
   ports:
   - port: 90
-    targetPort: 9080
+    targetPort: 8080
   selector:
     app: bankapp
