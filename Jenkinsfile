@@ -23,7 +23,7 @@ pipeline {
                 -Dsonar.projectKey=zafar90_Multi-Tier-With-Database \
                 -Dsonar.organization=zafar90-github \
                 -Dsonar.host.url=https://sonarcloud.io \
-                -Dsonar.token=df3b7313f7c62476b0fb7cddb7655c46a96e1b41
+                -Dsonar.token=07a198292600d1cd04f56eafcaf72d65938d5f92
                 """
             }
         }
